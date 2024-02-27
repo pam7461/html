@@ -10,12 +10,17 @@
             margin: 0;
             padding: 0;
         }
-       table,tr,td{
+       table,tr,td,th{
         border:1px solid #000000;
         border-collapse:collapse;
        } 
        td{
         width:200px;
+        text-align:center;
+       }
+       th{
+        width:100px;
+        text-align:center;
        }
     </style>
 </head>
@@ -41,5 +46,60 @@
             <td>1</td>
         </tr>
     </table>
+    <br><br><br>
+    <table>
+        <tr>
+            <th>이름</th>
+            <td>홍길동</td>
+            <th>연락처</th>
+            <td>010-1234-5678</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3">인천광역시 서구 당하동 1-1</td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3">멋진남자</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <table>
+        <caption>(표-1)윗세오름 게스트하우스</caption>
+        <thead>
+            <tr>
+                <th>방 이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>유채방</th>
+                <td>여성 도미토리</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 30,000원</td>
+            </tr>
+            <tr>
+                <th rowspan="2">동백방</th>
+                <td>동성 도미토리</td>                
+            </tr>
+            <tr>
+                <td>가족1팀</td>                
+            </tr>
+            <tr>
+                <th>전혜향방</th>
+                <td>혼성 도미토리</td>
+                <td>2인실</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">전체를 렌트합니다.</th>
+            </tr>
+        </tfoot>        
+    </table>
+
 </body>
 </html>
