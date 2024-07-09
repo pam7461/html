@@ -6,8 +6,18 @@
     <title>로그인</title>
 </head>
 <body>
+    <h1>로그인</h1>
     <form action="#">
-        
+        <h2>ID로그인</h2>
+        <!-- 아이디는 필수, 6~16자, 포커스 -->
+        <input type="text" name="uId" placeholder="아이디" required minlength="6" maxlength="16" autofocus>
+        <br>
+        <input type="password" name="uPass" placeholder="패스워드" required>
+        <br>
+        <input type="checkbox" name="loginUji" id="login-uji"><label for="login-uji">로그인 상태 유지</label>
+        <label>IP보안</label><input type="checkbox" name="ipScu">
+        <br>
+        <input type="submit" value="로그인">
     </form>
 </body>
 </html>
