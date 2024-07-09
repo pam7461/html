@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 반응형 img -->
+    <picture>
+        <!-- 데스트탑 에서 보일 이미지 -->
+        <source media="(min-width:1280px)" srcset="./images/summer01.jpg">
+        <!-- 테블릿 에서 보일 이미지 -->
+        <source media="(min-width:768px)" srcset="./images/summer02.jpg">
+        <!-- 기본 이미지 -->
+        <img src="./images/summer03.jpg" alt="여름">
+    </picture>  
+    
+    <video src="./video/summer02.mp4" controls muted autoplay loop></video>
+    
+    <audio src="./audio/summer01.mp3" controls autoplay muted loop></audio>
+</body>
+</html>
