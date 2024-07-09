@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>웹디지이너, 퍼블리셔, 프론트엔드, 백엔드 지원서</h1>
+    <p>2024년 신입/경력직 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quod accusantium amet! Velit aspernatur, dolorum dignissimos odit et voluptatem nulla.</p>
+    <form action="#">
+        <!-- 개인정보 -->
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="u-name">이름</label>
+                    <input type="text" name="uName" id="u-name" required>
+                </li>
+                <li>
+                    <label for="u-age">나이</label>
+                    <input type="text" name="uAge" id="u-age" required>
+                </li>
+            </ul>
+        </fieldset>
+        <!-- 지원부서 -->
+        <fieldset>
+            <legend>지원부서</legend>
+            <select name="tmp" required>
+                <option value="01">웹디자이너</option>
+                <option value="02">퍼블리셔</option>
+                <option value="03">프론트엔드</option>
+                <option value="04">백엔드</option>
+            </select>
+        </fieldset>
+        <!-- 희망연봉 -->
+         <fieldset>
+            <legend>희망연봉</legend>
+            <ul>
+                <li><label><input type="radio" name="pay">1800미만</label></li>
+                <li><label><input type="radio" name="pay">1800~2000</label></li>
+                <li><label><input type="radio" name="pay">2001~2400</label></li>
+                <li><label><input type="radio" name="pay">2400이상</label></li>
+            </ul>
+         </fieldset>
+         <!-- 자기소개 -->
+          <fieldset>
+            <legend>자기소개</legend>
+            <textarea rows="20" cols="200"></textarea>
+          </fieldset>
+          <!-- 전송 -->
+          <input type="submit" value="지원하기">
+          <input type="reset" value="다시작성">
+    </form>
+</body>
+</html>
